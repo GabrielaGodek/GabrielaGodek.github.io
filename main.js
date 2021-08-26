@@ -35,6 +35,7 @@ const prepareDOMEvent = () => { //naslychiwanie
     ulList.addEventListener('click', checkClick)
     popupCloseBtn.addEventListener('click', closeEdit)
     popupAddBtn.addEventListener('click', changeToDo)
+    todoInput.addEventListener('keyup', addByEnter)
 
 
 }
@@ -112,7 +113,12 @@ const deleteToDo = evt => {
         errorInfo.textContent = ' '
     }
 }
+const addByEnter = evt => {
+    if(evt.key === 'Enter') {
+        addNewTask()
 
+    }
+}
     
 
 document.addEventListener('DOMContentLoaded', main)
