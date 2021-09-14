@@ -1,0 +1,44 @@
+.client-opinions h3 {
+  margin-top: 50px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.client-opinions .cap-op {
+  text-align: center;
+  color: #006bff;
+  margin-bottom: 50px;
+}
+
+.client-opinions .opinions {
+  max-height: 548px;
+  margin-bottom: 60px;
+  border: 1px solid #818181;
+  border-radius: 10px;
+  background-color: #f8f8f8;
+}
+
+.client-opinions .opinions .name {
+  margin-left: 5px;
+  color: #006bff;
+  font-size: 17px;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.client-opinions .opinions .client {
+  height: 100%;
+  float: left;
+  margin-left: -12px;
+  border-radius: 10px 0 0 10px;
+  margin-right: 10px;
+}
+
+.client-opinions .opinions .text {
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.client-opinions .opinions .text .fa-star {
+  color: #006bff;
+}

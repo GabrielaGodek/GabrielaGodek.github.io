@@ -1,0 +1,43 @@
+.Page3 .imgBack {
+  height: 100%;
+}
+
+.Page3 .thirdForm {
+  margin-top: 50px;
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 20px 20px 60px 20px;
+  background-color: white;
+}
+
+.Page3 .thirdForm .headingPage3 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #006bff;
+}
+
+.Page3 .thirdForm .btn-check {
+  color: black;
+}
+
+.Page3 .thirdForm .btn-outline-primary {
+  margin-right: 10px;
+  padding: 5px 25px;
+  font-weight: bold;
+}
+
+.Page3 .thirdForm .info {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.Page3 .thirdForm .heading6Page3 {
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.Page3 .thirdForm button {
+  text-transform: uppercase;
+}

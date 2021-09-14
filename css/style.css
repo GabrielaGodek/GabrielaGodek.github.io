@@ -1,0 +1,486 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans";
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 70vw;
+}
+
+.wrapper .logoVIP {
+  margin-top: 15px;
+  width: 140px;
+  z-index: 1;
+}
+
+.wrapper .Page1 .rep {
+  margin: 50px 0 50px 100px;
+  font-size: 10px;
+  text-decoration: underline;
+  color: #818181;
+}
+
+.wrapper .Page1 .headingPage1 {
+  margin-top: 30px;
+  font-size: 47px;
+  font-weight: bold;
+  z-index: 3;
+}
+
+.wrapper .Page1 .headingPage1 .color {
+  color: #006bff;
+}
+
+.wrapper .Page1 .caption {
+  margin: 20px 0 40px;
+  font-size: 15px;
+  z-index: 3;
+  color: #818181;
+}
+
+.wrapper .Page1 .form {
+  margin-left: 12px;
+  border: 1px solid #818181;
+  background-color: #fefefe;
+  border-radius: 10px;
+  padding-bottom: 80px;
+}
+
+.wrapper .Page1 .form .heading3Page1 {
+  margin-top: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: grey;
+  font-size: 15px;
+}
+
+.wrapper .Page1 .form input {
+  margin-top: 20px;
+}
+
+.wrapper .Page1 .form .pln-box {
+  float: right;
+  border: 1px solid #006bff;
+  border-radius: 5px;
+  text-align: center;
+  padding: 5px 10px;
+}
+
+.wrapper .Page1 .form .mc-box {
+  float: right;
+  border: 1px solid #006bff;
+  border-radius: 5px;
+  text-align: center;
+  padding: 5px 10px;
+}
+
+.wrapper .Page1 .form label {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.wrapper .Page1 .form label .lower {
+  font-size: 10px;
+}
+
+.wrapper .Page1 .form button {
+  text-transform: uppercase;
+}
+
+.wrapper .Page2 .secondForm {
+  border: 1px solid #818181;
+  border-radius: 15px;
+  padding-bottom: 80px;
+  margin-top: 50px;
+  background-color: white;
+}
+
+.wrapper .Page2 .secondForm .headingPage2 {
+  margin-top: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 30px;
+  color: #006bff;
+}
+
+.wrapper .Page2 .secondForm .box {
+  border: 1px solid #006bff;
+  text-align: right;
+  padding: 5px 20px;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.wrapper .Page2 .secondForm .box .pln-box2 {
+  font-weight: bold;
+}
+
+.wrapper .Page2 .secondForm .box .mc-box2 {
+  font-weight: bold;
+}
+
+.wrapper .Page2 .secondForm .miniForm .heading6Page2 {
+  text-transform: uppercase;
+  font-size: 10px;
+  margin: 20px 20px 10px;
+}
+
+.wrapper .Page2 .secondForm .miniForm .input-group {
+  margin: 0 5%;
+  width: 90%;
+}
+
+.wrapper .Page2 .secondForm .miniForm .input-group-text {
+  color: #006bff;
+}
+
+.wrapper .Page2 .secondForm .miniForm .form-check {
+  margin-left: 5%;
+}
+
+.wrapper .Page2 .secondForm .miniForm .form-check .radioBox {
+  margin-left: 10px;
+}
+
+.wrapper .Page2 .secondForm .miniForm .form-check input {
+  border-color: #006bff;
+}
+
+.wrapper .Page2 .secondForm .miniForm .form-check label {
+  font-size: 13px;
+}
+
+.wrapper .Page2 .secondForm .miniForm .form-check a {
+  color: black;
+}
+
+.wrapper .Page2 .secondForm .miniForm button {
+  text-transform: uppercase;
+}
+
+.wrapper .Page3 .imgBack {
+  height: 100%;
+}
+
+.wrapper .Page3 .thirdForm {
+  margin-top: 50px;
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 20px 20px 60px 20px;
+  background-color: white;
+}
+
+.wrapper .Page3 .thirdForm .headingPage3 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #006bff;
+}
+
+.wrapper .Page3 .thirdForm .btn-check {
+  color: black;
+}
+
+.wrapper .Page3 .thirdForm .btn-outline-primary {
+  margin-right: 10px;
+  padding: 5px 25px;
+  font-weight: bold;
+}
+
+.wrapper .Page3 .thirdForm .info {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.wrapper .Page3 .thirdForm .heading6Page3 {
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.wrapper .Page3 .thirdForm button {
+  text-transform: uppercase;
+}
+
+.wrapper .Page4 {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.wrapper .Page4 h1 {
+  padding: 40px;
+  border-radius: 10px;
+  border: 1px solid black;
+  background-color: white;
+  font-weight: bold;
+}
+
+.wrapper .Page4 h1 .color {
+  color: #006bff;
+}
+
+.wrapper .client-opinions h3 {
+  margin-top: 50px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.wrapper .client-opinions .cap-op {
+  text-align: center;
+  color: #006bff;
+  margin-bottom: 50px;
+}
+
+.wrapper .client-opinions .opinions {
+  max-height: 548px;
+  margin-bottom: 60px;
+  border: 1px solid #818181;
+  border-radius: 10px;
+  background-color: #f8f8f8;
+}
+
+.wrapper .client-opinions .opinions .name {
+  margin-left: 5px;
+  color: #006bff;
+  font-size: 17px;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.wrapper .client-opinions .opinions .client {
+  height: 100%;
+  float: left;
+  margin-left: -12px;
+  border-radius: 10px 0 0 10px;
+  margin-right: 10px;
+}
+
+.wrapper .client-opinions .opinions .text {
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.wrapper .client-opinions .opinions .text .fa-star {
+  color: #006bff;
+}
+
+.wrapper .howItWorks {
+  padding: 20px 0;
+}
+
+.wrapper .howItWorks .heading3hiw {
+  margin-top: 5%;
+  text-align: center;
+}
+
+.wrapper .howItWorks .steps5 {
+  color: #006bff;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.wrapper .howItWorks .steps {
+  text-align: center;
+  padding-bottom: 45px;
+}
+
+.wrapper .howItWorks .steps .step-icon {
+  width: 50px;
+  margin-bottom: 5px;
+}
+
+.wrapper .howItWorks .steps .stepText {
+  margin-bottom: 25px;
+  margin-top: 20px;
+}
+
+.wrapper .howItWorks .steps .number {
+  text-align: center;
+  background-color: #c2c2c2;
+  padding: 2px 10px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+}
+
+.wrapper .howItWorks .arrow {
+  margin-left: 110px;
+  margin-top: -35px;
+}
+
+.wrapper .howItWorks .arrow2 {
+  margin-left: 110px;
+  margin-top: -65px;
+}
+
+.wrapper .howItWorks .arrow3 {
+  margin-left: 110px;
+  margin-top: -30px;
+}
+
+.wrapper .howItWorks .arrow4 {
+  margin-left: 110px;
+  margin-top: -20px;
+}
+
+.wrapper .howItWorks button {
+  margin-bottom: -20px;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 800px) {
+  .wrapper .arrow, .wrapper .arrow2, .wrapper .arrow3, .wrapper .arrow4 {
+    display: none;
+  }
+  .wrapper .step-icon {
+    margin-top: 50px;
+  }
+}
+
+.wrapper .about {
+  margin-bottom: 25vh;
+}
+
+.wrapper .about .heading3About {
+  margin: 80px 0 40px 0;
+}
+
+.wrapper .about .heading6PageAbout {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.wrapper .about li {
+  font-size: 12px;
+  font-weight: bold;
+  margin-left: -15px;
+}
+
+.wrapper .about .paragraph {
+  color: black;
+  font-size: 12px;
+  text-align: left;
+}
+
+.wrapper .about .paragraphLI {
+  color: black;
+  font-size: 12px;
+  text-align: left;
+  margin-left: -28px;
+}
+
+.wrapper .about .heading6About2 {
+  font-weight: bold;
+  font-size: 12px;
+  margin-left: -25px;
+}
+
+.wrapper .about .paragraph2 {
+  color: black;
+  font-size: 12px;
+  text-align: left;
+  margin-left: -25px;
+}
+
+.wrapper .about .secondUl {
+  list-style: circle solid black;
+}
+
+.wrapper .about .secondUl .secondLI {
+  font-weight: normal;
+  margin-left: -20px;
+}
+
+.wrapper .about .btnAbout {
+  margin: 60px 0 60px;
+  text-transform: uppercase;
+}
+
+.wrapper footer {
+  padding-top: 30px;
+  padding-bottom: 80px;
+}
+
+.wrapper footer .footerLink {
+  text-decoration: none;
+  color: black;
+}
+
+.wrapper footer .logos .VIP {
+  height: 70px;
+}
+
+.wrapper footer .logos .Opineo {
+  height: 60px;
+}
+
+.wrapper footer .logos .zwp {
+  height: 60px;
+}
+
+.wrapper footer .logos .laur {
+  height: 60px;
+}
+
+.wrapper footer .logos .footers {
+  font-size: 12px;
+}
+
+.popUp {
+  background-color: #323232;
+  width: 100vw;
+  height: 10vh;
+  position: fixed;
+  bottom: 0;
+  border: 1px solid black;
+  font-size: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.popUp .cookies {
+  display: table-cell;
+  text-align: center;
+  color: white;
+  vertical-align: middle;
+}
+
+.popUp .cookiesBtn {
+  margin-left: 20px;
+  background-color: white;
+  padding: 3px 15px;
+  font-size: 12px;
+  border-radius: 7px;
+}
+
+.bg {
+  width: 100%;
+  background: #f7f7f7;
+  background: linear-gradient(169deg, #f7f7f7 13%, #fcfcfc 88%);
+  z-index: -2;
+}
+
+.bg .imgBack {
+  position: absolute;
+  right: 0;
+  top: 0;
+  max-height: 90%;
+  max-width: auto;
+}
+
+.sm-bg {
+  width: 100%;
+  background-color: #f8f8f8;
+  z-index: -2;
+}
+
+.ft-bg {
+  width: 100%;
+  background-color: #f8f8f8;
+  z-index: -2;
+}
