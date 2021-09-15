@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Landing Page RAE</title>
     <link rel="stylesheet" href="css/style.min.css">
 
@@ -30,47 +31,52 @@
 <body onload="cookies()">
 
 <div class="bg">
-    <!-- <img src="images/background.svg" alt="background image" class="imgBack"> -->
-    <!-- <div class="container-fluid"> -->
     <div class="wrapper px-4" id="sendForm">
+        <img src="images/background.svg" alt="background image" class="imgBack">
         <!-- LOGO -->
-        <div class="row">
-        <div class="col-xl-1"></div>
-        <img src="images/logo-VIP.svg" alt="Logo VIPKredyt" class="col-xl-2 logoVIP">
+        <div class="row logobg">
+            <div class="col-xl-1"></div>
+            <img src="images/logo-VIP.svg" alt="Logo VIPKredyt" class="col-xl-2 logoVIP">
         </div>
 
         
         <!--container dla zmieny stron -->
         <div class="pageChange">
+            
 
+        
             <div class="Page1">
                     <div class="container-fluid">
                     <div class="row">
-                        <div class="col-xl-1"></div>
-                        <h1 class="col-xl-8 headingPage1">Pieniądze dla Twojej firmy! <br> Odbierz nawet <span class="color">300.000</span> zł</h1>
+                        <h1 class="offset-sm-1 col-xs-11 col-xl-8 headingPage1">Pieniądze dla Twojej firmy! <br> Odbierz nawet <span class="color">300.000</span> zł</h1>
                     </div>
                     <div class="row">
-                        <div class="col-xl-1"></div>
+                    <div class="col-xl-1"></div>
                         <div class="col-xl-6 caption">Wybierasz potrzebną kwotę i czas na jaki potrzebujesz finansowania,
                             <br> a my przygotujemy najlepszą ofertę, dopasowaną do Twoich potrzeb.</div>
                         </div>
                         <div class="row">
-                    <div class="col-xl-1"></div>
-                    <div class="offset-sm-1 col-xl-5 form position-relative">
+                    <div class="offset-xl-1 col-xl-5 form position-relative">
                     <h3 class="heading3Page1">Wybierz kwotę i okres</h3>
-                    <div class="col-12">
-                        <input type="text" class="pln-box col-xl-3" value=50000>
-                        <input class="offset-1 col-xl-7 rangePln" type="range" id="rangePLN" min="5000" max="300000" step="1000" value=50000><br>
-                        <label for="rangePLN" class="offset-1 col-xl cap">5.000 <span class="lower">zł</span></label>
-                        <label for="rangePLN" class="offset-3 col-xl cap">300.000 <span class="lower">zł</span></label>
+
+                    <div class="container-fluid">
+                        <div class="row reverseRow">
+                            <input class="col-xl-7 rangePln" type="range" id="rangePLN" min="5000" max="300000" step="1000" value=50000 ><br>
+                            <div class="col"></div>
+                            <input type="text" class="pln-box col-xl-3" value=50000>
+                        </div>
+                                <label for="rangePLN" class="col-xl cap">5.000 <span class="lower">zł</span></label>
+                                <label for="rangePLN" class="offset-4 col-xl cap">300.000 <span class="lower">zł</span></label>
                     </div>
 
-                    <div class="col-12">
-                        <input type="text" class="mc-box col-xl-3" value=15>
-                        <input class="offset-1 col-xl-7 rangeMc"id="rangeMc" type="range" min="1" max="36"><br>
-                        <label for="rangeMc"class="offset-1 col-xl cap">1 <span class="lower">miesiąc</span></label>
-                        <label for="rangeMc"class="offset-3 col-xl cap">36 <span class="lower">miesięcy</span></label>
-                    </div>
+                    <div class="container-fluid">
+                    <div class="row reverseRow">
+                            <input class=" col-xl-7 rangeMc"id="rangeMc" type="range" min="1" max="36"><br>
+                            <div class="col"></div>
+                            <input type="text" class="mc-box col-xl-3" value=15>
+                        </div>
+                            <label for="rangeMc"class="col-xl cap">1 <span class="lower">miesiąc</span></label>
+                            <label for="rangeMc"class="offset-4 col-xl cap">36 <span class="lower">miesięcy</span></label>
 
                                 <button type="button" class="btn btn-primary btn-lg col-xl-8 position-absolute top-100 start-50 translate-middle formBtn">Wyślij wniosek</button>
                             </div>
@@ -79,10 +85,10 @@
                 </div>
 </div>
         </div>
-    </div>
-    </div>
-</div>
 
+</div>
+</div> 
+</div>
     <!-- Opinie -->
     <div class="wrapper">
         <div class="client-opinions">
@@ -91,22 +97,65 @@
             <div class="container-fluid">
                 <p class="cap-op">Opinie</p>
 
-                <div class="row gap-4 ">
-                    <div class="col-xl opinions ">
-                            <img src="/images/op1.png" alt="Happy Client" class="client col-xl-4">
-                                <p class="name"><b>Alicja</b>, Wrocław</p>
-                                <div class="row text ">Potrzebowałam tylko niewielkiej sumy, żeby przetrwać zastój w biznesie. Covid dał się mocno we wznaki, ale dzieki wam pieniądze dostałam na czas, a teraz preżnie się rozwijam, dzieki!
-                                                        <div class="offset-2 col-xl-7 stars py-3 gy-0">
-                                                            <span class="fa fa-star"></span>
-                                                            <span class="fa fa-star"></span>
-                                                            <span class="fa fa-star"></span>
-                                                            <span class="fa fa-star"></span>
-                                                            <span class="fa fa-star"></span>
-                                                        </div>
-                                </div>
-                        </div>
-        
+                <div class="row gap-4 px-2">
 
+                    <div class="col-xl opinions ">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0">
+                                    <img src="/images/op1.png" alt="Happy Client" class="client">
+                                </div>
+                            <div class="row text flex-grow-1 ">
+                                <p class="name"><b>Alicja</b>, Wrocław</p><br>
+                                Potrzebowałam tylko niewielkiej sumy, żeby przetrwać zastój w biznesie. Covid dał się mocno we wznaki, ale dzieki wam pieniądze dostałam na czas, a teraz preżnie się rozwijam, dzieki!
+                                        <div class="offset-2 col-xl-7 stars py-3 gy-0">
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                           </div>
+                            </div>
+                    </div>
+                    <div class="col-xl opinions ">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0">
+                                    <img src="/images/op2.png" alt="Happy Client" class="client">
+                                </div>
+                            <div class="row text flex-grow-1 ">
+                                <p class="name"><b>Andrzej</b>, Warszawa</p><br>
+                                VIPKredyt to mój stały partner w biznesie. Zawszę mogę na nich liczyć. Współpracujrmy już od jakiegoś czasu i jeszcze się nie zawiodłem, tak więc szczerze polecam.
+                                        <div class="offset-2 col-xl-7 stars py-3 gy-0">
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                           </div>
+                            </div>
+                    </div>
+                    <div class="col-xl opinions ">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0">
+                                    <img src="/images/op3.png" alt="Happy Client" class="client">
+                                </div>
+                            <div class="row text flex-grow-1 ">
+                                <p class="name"><b>Oleg</b>, Białystok</p><br>
+                                W startupach niec nie jest pewne przez co ciężko jest nie tylko planować przyszłość, ale też chocby uzsykać kredyt. Na szczęście trafiłem na VIPKredyt i teraz mam zapewnione finansowanie na cały rok
+                                    
+                                        <div class="offset-2 col-xl-7 stars py-3 gy-0">
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                           </div>
+                            </div>
+                    </div>
+ 
+<!-- 
                     <div class="col-xl opinions ">
                         <img src="/images/op2.png" alt="Happy Client" class="client col-xl-4">
                             <p class="name"><b>Andrzej</b>, Warszawa</p>
@@ -133,7 +182,7 @@
                                                         <span class="fa fa-star"></span>
                                                     </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>

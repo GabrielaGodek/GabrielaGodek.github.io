@@ -1,6 +1,6 @@
 $(document).ready(function () {
-    function thxPage() {
+    $('.thirdForm').submit(function (e) {
+        e.preventDefault();
         $('.pageChange').load('./Page4.html').hide().fadeIn(500);
-    }
-    $('.thirdBtn').click(thxPage);
+    });
 })

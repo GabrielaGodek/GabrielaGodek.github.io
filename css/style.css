@@ -1,7 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: "Open Sans";
   scroll-behavior: smooth;
 }
@@ -26,7 +27,7 @@
 
 .wrapper .Page1 .headingPage1 {
   margin-top: 30px;
-  font-size: 47px;
+  font-size: 3em;
   font-weight: bold;
   z-index: 3;
 }
@@ -43,7 +44,6 @@
 }
 
 .wrapper .Page1 .form {
-  margin-left: 12px;
   border: 1px solid #818181;
   background-color: #fefefe;
   border-radius: 10px;
@@ -163,10 +163,6 @@
   text-transform: uppercase;
 }
 
-.wrapper .Page3 .imgBack {
-  height: 100%;
-}
-
 .wrapper .Page3 .thirdForm {
   margin-top: 50px;
   border: 1px solid black;
@@ -208,8 +204,9 @@
 }
 
 .wrapper .Page4 {
-  margin-top: 50px;
+  padding: 10vh 0 20vh;
   text-align: center;
+  z-index: 1;
 }
 
 .wrapper .Page4 h1 {
@@ -439,8 +436,12 @@
   bottom: 0;
   border: 1px solid black;
   font-size: 10px;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .popUp .cookies {
@@ -462,10 +463,10 @@
   width: 100%;
   background: #f7f7f7;
   background: linear-gradient(169deg, #f7f7f7 13%, #fcfcfc 88%);
-  z-index: -2;
 }
 
 .bg .imgBack {
+  z-index: auto;
   position: absolute;
   right: 0;
   top: 0;
@@ -484,3 +485,16 @@
   background-color: #f8f8f8;
   z-index: -2;
 }
+
+@media screen and (min-device-width: 320px) and (max-device-width: 834px) {
+  .wrapper {
+    width: 100vw;
+  }
+  .reverseRow {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: column-reverse;
+            flex-flow: column-reverse;
+  }
+}
+/*# sourceMappingURL=style.css.map */

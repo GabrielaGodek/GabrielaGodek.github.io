@@ -7,7 +7,7 @@
 
 .Page1 .headingPage1 {
   margin-top: 30px;
-  font-size: 47px;
+  font-size: 3em;
   font-weight: bold;
   z-index: 3;
 }
@@ -24,7 +24,6 @@
 }
 
 .Page1 .form {
-  margin-left: 12px;
   border: 1px solid #818181;
   background-color: #fefefe;
   border-radius: 10px;
