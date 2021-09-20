@@ -1,341 +1,72 @@
 <!DOCTYPE html>
-<html lang="pl">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>Landing Page RAE</title>
-    <link rel="stylesheet" href="css/style.min.css">
-
+    <title>WeatherApp</title>
+    <link rel="stylesheet" href="sass/style.css">
     <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
-    </script>
-    <!--Bootstrap icons-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <!--Font awesome-->
-    <script src="https://kit.fontawesome.com/13beb52b81.js" crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
-    <!-- Font Open Sans -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-
-    <!-- JQuery plugin -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
-
-<body onload="cookies()">
-
-<div class="bg">
-    <div class="wrapper px-4" id="sendForm">
-        <img src="images/background.svg" alt="background image" class="imgBack">
-        <!-- LOGO -->
-        <div class="row logobg">
-            <div class="col-xl-1"></div>
-            <img src="images/logo-VIP.svg" alt="Logo VIPKredyt" class="col-xl-2 logoVIP">
-        </div>
-
+<body>
+    <div class="app position-relative">
         
-        <!--container dla zmieny stron -->
-        <div class="pageChange">
-            
-
-        
-            <div class="Page1">
-                    <div class="container-fluid">
-                    <div class="row">
-                        <h1 class="offset-sm-1 col-xs-11 col-xl-8 headingPage1">Pieniądze dla Twojej firmy! <br> Odbierz nawet <span class="color">300.000</span> zł</h1>
-                    </div>
-                    <div class="row">
-                    <div class="col-xl-1"></div>
-                        <div class="col-xl-6 caption">Wybierasz potrzebną kwotę i czas na jaki potrzebujesz finansowania,
-                            <br> a my przygotujemy najlepszą ofertę, dopasowaną do Twoich potrzeb.</div>
-                        </div>
-                        <div class="row">
-                    <div class="offset-xl-1 col-xl-5 form position-relative">
-                    <h3 class="heading3Page1">Wybierz kwotę i okres</h3>
-
-                    <div class="container-fluid">
-                        <div class="row reverseRow">
-                            <input class="col-xl-7 rangePln" type="range" id="rangePLN" min="5000" max="300000" step="1000" value=50000 ><br>
-                            <div class="col"></div>
-                            <input type="text" class="pln-box col-xl-3" value=50000>
-                        </div>
-                                <label for="rangePLN" class="col-xl cap">5.000 <span class="lower">zł</span></label>
-                                <label for="rangePLN" class="offset-4 col-xl cap">300.000 <span class="lower">zł</span></label>
-                    </div>
-
-                    <div class="container-fluid">
-                    <div class="row reverseRow">
-                            <input class=" col-xl-7 rangeMc"id="rangeMc" type="range" min="1" max="36"><br>
-                            <div class="col"></div>
-                            <input type="text" class="mc-box col-xl-3" value=15>
-                        </div>
-                            <label for="rangeMc"class="col-xl cap">1 <span class="lower">miesiąc</span></label>
-                            <label for="rangeMc"class="offset-4 col-xl cap">36 <span class="lower">miesięcy</span></label>
-
-                                <button type="button" class="btn btn-primary btn-lg col-xl-8 position-absolute top-100 start-50 translate-middle formBtn">Wyślij wniosek</button>
-                            </div>
-                        </div>
-                        <p class="rep">Przykład reprezentatywny</p>
+        <div class="container-fluid">
+            <div class="row">
+                <h1 class=" col">WeatherApp</h1>
+            </div>
+                <div class="row">
+                    <div class="col-1 fas fa-map-marked-alt fa-2x"></div>
+                    <div class="col-10 place"></div>
                 </div>
-</div>
         </div>
 
-</div>
-</div> 
-</div>
-    <!-- Opinie -->
-    <div class="wrapper">
-        <div class="client-opinions">
-
-            <h3>Dlaczego warto wybrać VIPKredyt</h3>
             <div class="container-fluid">
-                <p class="cap-op">Opinie</p>
-
-                <div class="row gap-4 px-2">
-
-                    <div class="col-xl opinions ">
-                            <div class="d-flex">
-                                <div class="flex-shrink-0">
-                                    <img src="/images/op1.png" alt="Happy Client" class="client">
-                                </div>
-                            <div class="row text flex-grow-1 ">
-                                <p class="name"><b>Alicja</b>, Wrocław</p><br>
-                                Potrzebowałam tylko niewielkiej sumy, żeby przetrwać zastój w biznesie. Covid dał się mocno we wznaki, ale dzieki wam pieniądze dostałam na czas, a teraz preżnie się rozwijam, dzieki!
-                                        <div class="offset-2 col-xl-7 stars py-3 gy-0">
-                                            <span class="fa fa-star"></span>
-                                            <span class="fa fa-star"></span>
-                                            <span class="fa fa-star"></span>
-                                            <span class="fa fa-star"></span>
-                                            <span class="fa fa-star"></span>
-                                        </div>
-                           </div>
-                            </div>
-                    </div>
-                    <div class="col-xl opinions ">
-                            <div class="d-flex">
-                                <div class="flex-shrink-0">
-                                    <img src="/images/op2.png" alt="Happy Client" class="client">
-                                </div>
-                            <div class="row text flex-grow-1 ">
-                                <p class="name"><b>Andrzej</b>, Warszawa</p><br>
-                                VIPKredyt to mój stały partner w biznesie. Zawszę mogę na nich liczyć. Współpracujrmy już od jakiegoś czasu i jeszcze się nie zawiodłem, tak więc szczerze polecam.
-                                        <div class="offset-2 col-xl-7 stars py-3 gy-0">
-                                            <span class="fa fa-star"></span>
-                                            <span class="fa fa-star"></span>
-                                            <span class="fa fa-star"></span>
-                                            <span class="fa fa-star"></span>
-                                            <span class="fa fa-star"></span>
-                                        </div>
-                           </div>
-                            </div>
-                    </div>
-                    <div class="col-xl opinions ">
-                            <div class="d-flex">
-                                <div class="flex-shrink-0">
-                                    <img src="/images/op3.png" alt="Happy Client" class="client">
-                                </div>
-                            <div class="row text flex-grow-1 ">
-                                <p class="name"><b>Oleg</b>, Białystok</p><br>
-                                W startupach niec nie jest pewne przez co ciężko jest nie tylko planować przyszłość, ale też chocby uzsykać kredyt. Na szczęście trafiłem na VIPKredyt i teraz mam zapewnione finansowanie na cały rok
-                                    
-                                        <div class="offset-2 col-xl-7 stars py-3 gy-0">
-                                            <span class="fa fa-star"></span>
-                                            <span class="fa fa-star"></span>
-                                            <span class="fa fa-star"></span>
-                                            <span class="fa fa-star"></span>
-                                            <span class="fa fa-star"></span>
-                                        </div>
-                           </div>
-                            </div>
-                    </div>
- 
-<!-- 
-                    <div class="col-xl opinions ">
-                        <img src="/images/op2.png" alt="Happy Client" class="client col-xl-4">
-                            <p class="name"><b>Andrzej</b>, Warszawa</p>
-                            <div class="row text">VIPKredyt to mój stały partner w biznesie. Zawszę mogę na nich liczyć. Współpracujrmy już od jakiegoś czasu i jeszcze się nie zawiodłem, tak więc szczerze polecam.
-                                <div class="offset-3 col-xl-7 stars  gy-0">
-                                                        <span class="fa fa-star"></span>
-                                                        <span class="fa fa-star"></span>
-                                                        <span class="fa fa-star"></span>
-                                                        <span class="fa fa-star"></span>
-                                                        <span class="fa fa-star"></span>
-                                                    </div>
-                            </div>
-                        </div>
-                    <div class="col-xl opinions ">
-                        <img src="/images/op3.png" alt="Happy Client" class="client col-xl-4">
-                            <p class="name"><b>Oleg</b>, Białystok</p>
-                        <div class="row text">W startupach niec nie jest pewne przez co ciężko jest nie tylko planować przyszłość, ale też chocby uzsykać kredyt. Na szczęście trafiłem na VIPKredyt i teraz mam zapewnione finansowanie na cały rok
-                            
-                            <div class="offset-3 col-xl-6 stars py-1 gy-0">
-                                                        <span class="fa fa-star"></span>
-                                                        <span class="fa fa-star"></span>
-                                                        <span class="fa fa-star"></span>
-                                                        <span class="fa fa-star"></span>
-                                                        <span class="fa fa-star"></span>
-                                                    </div>
-                            </div>
-                        </div> -->
-                    </div>
+                <div class="row justify-content-sm-center">
+                    <img src="" alt="Weather Image" class=" cwol">
+                </div>
+                <div class="row justify-content-md-center">
+                        <div class=" col temp"><span class="celsius">&#8451;</span></div>
                 </div>
             </div>
-        </div>
-    </div>
-    </div>
-
-
-    <!-- Jak to działa -->
-    <div class="sm-bg">
-
-        <div class="wrapper">
-            <div class="container-fluid">
-            <div class="howItWorks position-relative">
-                <h3 class="heading3hiw">Jak to działa</h3>
-                <p class="steps5">Tylko 5 kroków dzieli Cię od gotówki. Zobacz jakie to proste</p>
-
-                    <div class="row steps">
-                        <div class="col-xl ">
-                            <img src="images/step1.svg" alt="step1 of how it works" id="step1" class="step-icon">
-                            <div for="step1" class="col-xl stepText">Wybierz kwotę<br> i okres spłaty</div>
-                            <div class="col-xl p-2"><span class="number">1</span> </div>
-                            <img src="images/arrow.png" alt="arrow" class="arrow col-xl-8">
-                        </div>
-                        <div class="col-xl">
-                            <img src="images/step2.svg" alt="step2 of how it works" class="step-icon">
-                            <div class="col-xl stepText">Wypełnij formularz</div>
-                            <div class="col-xl p-4"><span class="number">2</span> </div>
-                            <img src="images/arrow.png" alt="arrow" class="arrow2 col-xl-8">
-                        </div>
-                        <div class="col-xl">
-                            <img src="images/step3.svg" alt="step3 of how it works" class="step-icon">
-                            <div class="col-xl stepText">Potwierdź<br> swoje dane</div>
-                            <div class="col-xl p-1"><span class="number">3</span> </div>
-                            <img src="images/arrow.png" alt="arrow" class="arrow3 col-xl-8">
-                        </div>
-                        <div class="col-xl">
-                            <img src="images/step4.svg" alt="step4 of how it works" class="step-icon">
-                            <div class="col-xl stepText">Czekaj na kontakt <br>kosultanta</div>
-                            <div class="col-xl "><span class="number">4</span> </div>
-                            <img src="images/arrow.png" alt="arrow" class="arrow4 col-xl-8">
-                        </div>
-                        <div class="col-xl">
-                            <img src="images/step5.svg" alt="step5 of how it works" class="step-icon">
-                            <div class="col-xl stepText">Ciesz się z <br>otrzymanej gotówki</div>
-                            <div class="col-xl "><span class="number">5</span></div>
-
-                        </div>
-                        <a href="#sendForm">
-                            <button type="button" class="btn btn-primary btn-lg col-xl-3 position-absolute top-100 start-50 translate-middle">Wyślij
-                                wniosek</button></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-    <!-- Więcej o nas -->
-    <div class="container-fluid">
-        <div class="wrapper">
-            <div class="about position-relative">
-                <h3 class="heading3About">Więcej o nas i o pożyczaniu</h3>
-                <h6 class="heading6PageAbout">Porównywarka pożyczek online Czerwona Skarbonka</h6>
-                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio architecto saepe itaque, ea nulla quis ex quae natus rerum laboriosam corporis assumenda consequatur delectus? Nostrum deleniti ducimus debitis ea ipsam.</p>
-                <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque itaque voluptatum vitae quo ducimus alias a iste laudantium non labore neque doloremque dolorum esse, saepe, eveniet ullam, architecto ex error! </p>
-                <ul>
-                    <li>Minimalna i maksymalna kwota dostępnej pozyczki</li>
-                    <p class="paragraphLI">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, dolores nesciunt! Cumque ipsam voluptatem perspiciatis? Perferendis fugit error esse, dolor possimus rem blanditiis? Similique numquam reiciendis voluptate quod, itaque
-                        modi.
-                    </p>
-                    <li>Termin spłaty pożyczki pozabankowej</li>
-                    <p class="paragraphLI">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur totam harum ad autem minima veritatis repudiandae ea sunt odio provident distinctio, libero deserunt excepturi nisi at? Adipisci hic amet impedit.</p>
-                    <li>Dostępnośc oferty pierwszej darmowej pożyczki</li>
-                    <p class="paragraphLI">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ex libero doloribus ducimus aspernatur quibusdam, molestias delectus adipisci sequi magni, pariatur impedit maiores eligendi accusantium cumque ipsam illo eum incidunt!</p>
-                    <li>Czas wypłaty przyznanej chwilówki na konto bankowe</li>
-                    <p class="paragraphLI">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, reiciendis. Quam necessitatibus illum sequi ipsum, fugit voluptas doloribus rem perferendis voluptates incidunt nemo et hic ipsam a eveniet suscipit repellat.</p>
-                    <h6 class="heading6About2">Jak działa ranking pożyczek pozabankowych</h6>
-                    <p class="paragraph2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi quis ipsum, praesentium, aspernatur eligendi, consectetur mollitia obcaecati amet quae nemo ipsa. Voluptatem error nulla recusandae tempora id soluta fugit non!</p>
-                    <h6 class="heading6About2">Porównywanie uwzględnia takie parametry jak:</li>
-                        <ul class="secondUl">
-                            <li class="secondLI">Okres spłaty</li>
-                            <li class="secondLI">Rzeczywista Roczna Stopa Oprocentowania</li>
-                            <li class="secondLI">Prowizja</li>
-                            <li class="secondLI">Metoda weryfikacji pożyczkobiorcy</li>
-                            <li class="secondLI">Maksymalne kwoty pierwszej i kolejnej pożyczki</li>
-                        </ul>
-                        <h6 class="heading6About2">Jak działa ranking pożyczek online</h6>
-                        <p class="paragraph2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque amet id, corporis consectetur sit enim, quos a ullam tempora harum veniam labore maiores excepturi ipsam architecto laborum itaque rem fugiat.</p>
-                        <p class="paragraph2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora ullam molestias voluptatum praesentium cum quam. Ullam, maxime. Ullam, provident autem. Eveniet aspernatur voluptates sit harum quae veniam accusantium aperiam id?</p>
-                        <h6 class="heading6About2">Pożyczki przez Internet - szybko i wygodnie</h6>
-                        <p class="paragraph2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore consectetur saepe necessitatibus, dolorem officia, ex ducimus voluptates natus quibusdam exercitationem non veritatis accusamus repellendus aperiam! Voluptates
-                            quia nobis accusamus exercitationem.
-                        </p>
-                        <p class="paragraph2">Lorem ipsum dolor sit amet consectetur adipisicing elit. In natus minima assumenda, sit quia quas eveniet sapiente dolor consequuntur mollitia ipsa. Sapiente blanditiis quas officia quam atque minus nam similique.</p>
-                        <h6 class="heading6About2">Wygoda i łatwa dostępność</h6>
-                        <p class="paragraph2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed excepturi aliquid labore repellendus, libero nisi odio animi, maiores molestias eveniet nam et consectetur corporis praesentium rem earum nostrum unde porro.</p>
-                        <h6 class="heading6About2">Uproszczony do minimum proces wnioskowania</h6>
-                        <p class="paragraph2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo corporis quia culpa, pariatur architecto error accusamus dolores ab a illum adipisci totam provident hic officiis amet, modi nulla vitae deleniti?</p>
-                        <h6 class="heading6About2">Mało restrykcyjne wymagania</h6>
-                        <p class="paragraph2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere autem perspiciatis atque, illo nemo cumque nostrum ipsum, corporis excepturi inventore repudiandae beatae reprehenderit odio dolore iusto hic sit quibusdam ipsa?</p>
-                        <h6 class="heading6About2">Elastyczne kwoty pożyczek</h6>
-                        <p class="paragraph2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque officiis commodi, exercitationem odit nulla nisi repellat deserunt iure consequuntur ipsum, sapiente explicabo facere alias dicta ipsa voluptate, possimus maiores
-                            vitae.
-                        </p>
-                        <a href="#sendForm"><button type="button"
-                                class="btnAbout btn btn-primary btn-lg col-xl-3 position-absolute top-100 start-50 translate-middle">Wyślij
-                                wniosek</button></a>
-            </div>
-        </div>
-
-
-
-        <!-- Footer -->
-        <div class="ft-bg">
-            <div class="wrapper">
-                <footer>
-
-                    <div class="container-fluid">
-                        <div class="row logos">
-                            <img src="images/logo-VIP.svg" alt="Logo VIPKredyt" class="VIP col-sm-3">
-                            <div class="col-xl-1"></div>
-                            <img src="images/logo2.svg" alt="Logo Opineo" class="Opineo col-sm-2">
-                            <img src="images/logo3.svg" alt="Logo Polski Zwiazek Pozyczkowych" class="zwp col-sm-3">
-                            <img src="images/logo4.svg" alt="Logo laur zaufania" class="laur col-sm-3">
-                        </div>
+           
+                    <div class="about container-fluid">
                         <div class="row">
-                            <div class="col-xl p-3">Grupa czerwona-skarbonka.pl</div>
+                            <div class="offset-3 space col-6"></div>
                         </div>
-                        <div class="row">
-                            <div class="footers col-xl-5">Czerwona skarbonka powstała z myślą o ułatwieniu nawigacji po trudnym rynku pozyczek pozabankowych. Znajdą państwo u nas oferty jedynie pewnych, uczciwych pożyczkodawców. Wszystkie oferty sprawdzamy na sobie!</div>
+                        <div class="specific row">
+                            <!-- Wind -->
+                            <div class=" position-absolute bottom-0 start-0">
+                                <p class="col-3 spac-windy">Wind</p>
+                                <p class="col-3 windy "></p>
+                            </div>
+                            <!-- Temperature -->
+                            <div class="position-absolute bottom-0 start-50 translate-middle-x">
+                                <p class="col spac-min-max">Temperature <br>min / max</p>
+                                <p class="col min-max "><span class="min"><span class="celsius">&#8451;</span></span> / <span class="max"><span class="celsius">&#8451;</span></span></p>
+                            </div>
+                            <!-- Clouds -->
+                            <div class=" position-absolute bottom-0 end-0">
+                                <p class="offset-9 col-3 spac-clouds">Clouds</p>
+                                <p class="offset-9 col-3 clouds " ></p>
+                            </div>
                         </div>
-                        <div class="row p-3">
-                            <div class="col-xl-3 footers">&copy; czerwona skarbonka 2021</div>
-                            <div class="col-xl-4"></div>
-                            <div class="col-xl footers"><a href="#" class="footerLink">Regulamin</a></div>
-                            <div class="col-xl-2 footers"><a href="#" class="footerLink">Polityka prywatności</a></div>
-                            <div class="col-xl footers"><a href="#" class="footerLink">Wnioskuj</a></div>
                         </div>
-                    </div>
-                </footer>
-            </div>
-        </div>
-        <!-- Cookies -->
-        <div class="popUp row">
-            <div class="col-xl-1"></div>
-            <div class="cookies col-xl-10">Strona korzysta z ciasteczek, aby świadczyć usługi na najwyższym poziomie. Dalsze korzystanie ze strony oznacza, że akceptujesz ich użycie zgodnie z <a href="#">polityką prywatności</a>
-                <button type="button" class="cookiesBtn btn btn-outline-primary">OK</button></div>
-        </div>
-
+                        
+    <div class="popUp">
+        <h2>Change city</h2>
+        <input type="text" placeholder="enter city" id="city">
+        <label for="city" class="error-info"></label>
+        <button class="change-city">Change</button>
     </div>
+          
+</div>
+
+    <script src="https://kit.fontawesome.com/13beb52b81.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/changePage.js"></script>
 </body>
-
 </html>
