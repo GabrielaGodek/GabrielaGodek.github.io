@@ -9,6 +9,7 @@
   background-color: #3a3a3a;
   padding: 15px 0 15px 0;
   font-size: 12px;
+  text-align: left;
 }
 
 * nav a {
@@ -25,8 +26,8 @@
   background-color: #3a3a3a;
   width: 60px;
   position: absolute;
-  top: -5px;
-  left: 46vw;
+  left: 50%;
+  transform: translate(-50%, -50%);
   transform: rotate(45deg);
 }
 
@@ -35,20 +36,19 @@
   color: white;
 }
 
-* nav .bar {
+* nav .bar, * nav .bar2 {
   position: absolute;
-  margin: 25px 25px;
-  width: 43vw;
+  width: 35vw;
   background-color: #e4e9eb;
   height: 2px;
 }
 
+* nav .bar {
+  margin: 25px 65px;
+}
+
 * nav .bar2 {
-  position: absolute;
-  margin: 25px 52vw;
-  width: 43vw;
-  background-color: #e4e9eb;
-  height: 2px;
+  margin: 25px 60vw;
 }
 
 * .portfolio {
@@ -277,7 +277,8 @@
     display: none;
   }
   nav .bar {
-    margin: 25px -100px;
+    position: relative;
+    margin: 25px auto;
     width: 60vw;
   }
   nav .bar2 {
@@ -293,5 +294,8 @@
   }
   .about .social {
     margin-right: 10px;
+  }
+  .contact input {
+    margin-top: 10px;
   }
 }
