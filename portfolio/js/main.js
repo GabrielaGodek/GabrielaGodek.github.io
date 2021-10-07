@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
     $('#forms').validate({
-        debug: true,
+        // debug: true,
         rules: {
             name: "required",
             email: {
@@ -10,7 +10,7 @@ $(document).ready(function () {
             },
             subject: {
                 required: true,
-                maxLength: 60,
+                maxlength: 4,
             },
             message: {
                 required: true,
