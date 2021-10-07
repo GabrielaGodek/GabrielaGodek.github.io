@@ -1,0 +1,52 @@
+.about {
+    // height: 60vh;
+    // .container-fluid{
+    //     height: 56vh;
+    //     padding-top: 2vh;
+    //     width: 80vw;
+    //     border-left: 1px solid black;
+    //     border-right: 1px solid black
+    // }
+    background-color: #2eb398;
+    .row {
+        padding: 10vh 0 15vh;
+        .hexagon {
+            // border-left: 1px solid black;
+            @include hexagon;
+        }
+        .profile {
+            background-image: url("../img/profile.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        h1 {
+            color: #ccf7ef;
+        }
+        h3 {
+            margin-top: -17px;
+            color: #248e78;
+        }
+        p {
+            text-align: justify;
+            margin-top: 17px;
+            margin-bottom: 80px;
+            color: #ccf7ef;
+        }
+    }
+    .social {
+        opacity: 60%;
+        ul {
+            list-style-type: none;
+            margin-top:50px;
+
+            li {
+                display: inline;
+                // background-image: url("../img/facebook.png");
+                width: 20px;
+                height: 20px;
+                // margin-left:-1px;
+            }
+        }
+    }
+}

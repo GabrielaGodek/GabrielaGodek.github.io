@@ -1,0 +1,70 @@
+.portfolio {
+    margin-bottom: 80px;
+    .hexagon {
+        @include hexagon;
+        margin-right: 20px;
+        margin-bottom: -35px;
+    }
+    //First row
+    .st1st {
+        background-image: url("../img/6.png");
+        @include position;
+    }
+    .st2nd {
+        background-image: url("../img/5.png");
+                @include position;
+    }
+    .st3rd {
+        background-image: url("../img/8.png");
+                @include position;
+    }
+    .st4th {
+        background-image: url("../img/7.png");
+                @include position;
+    }
+
+    //Second row
+    .sd1st {
+        background-image: url("../img/12.png");
+                @include position;
+    }
+    .sd2nd {
+        background-image: url("../img/11.png");
+                @include position;
+    }
+    .sd3rd {
+        background-image: url("../img/3.png");
+                @include position;
+    }
+    .sd4th {
+        background-image: url("../img/10.png");
+                @include position;
+    }
+    .sd5th {
+        background-image: url("../img/9.png");
+                @include position;
+    }
+    //Third row
+    .rd1st {
+        background-image: url("../img/1.png");
+                @include position;
+    }
+    .rd2nd {
+        background-image: url("../img/13.png");
+                @include position;
+    }
+    .rd3rd {
+        background-image: url("../img/4.png");
+                @include position;
+    }
+    .rd4th {
+        background-image: url("../img/2.png");
+                @include position;
+    }
+
+    margin-top: 10vh;
+    // .row {
+    //     margin-top: -30px;
+    // }
+    // @include hexagon
+}

@@ -1,0 +1,40 @@
+nav {
+    background-color: #3a3a3a;
+    padding: 15px 0 15px 0;
+    font-size:12px;
+    a{
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #fff;
+    }
+    .active{
+    color:#2eb398;
+}
+    .arrow {
+        background-color: #3a3a3a;
+        width: 60px;
+        position: absolute;
+        top: -5px;
+        left: 46vw;
+        transform: rotate(45deg);
+        .fa-angle-down {
+            transform: rotate(-45deg);
+            color: white;
+            // margin-left: 45px;
+        }
+    }
+    .bar{
+        position: absolute;
+        margin:25px 25px;
+        width: 43vw;
+        background-color: #e4e9eb;
+        height:2px;
+    }
+    .bar2{
+        position: absolute;
+        margin:25px 52vw;
+        width: 43vw;
+        background-color: #e4e9eb;
+        height:2px;
+    }
+}
