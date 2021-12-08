@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+ul{
+    list-style: none;
+    text-align: center;
+}
+h3{
+    text-align: center;
+    text-transform: uppercase;
+    background-color: rgb(117, 168, 117);
+    border-bottom: 1px solid #000000;
+}
+input{
+    text-transform: uppercase;
+}
